@@ -87,7 +87,7 @@
 				<li><a href="/mysite/user?a=joinform">회원가입</a></li>
 			</c:if>
 			
-			<c:if test="${empty sessionScope.authUser}">
+			<c:if test="${!(empty sessionScope.authUser)}">
 				<!-- 로그인 후 -->
 				<li><a href="/mysite/user?a=modifyform">회원정보수정</a></li>
 				<li><a href="/mysite/user?a=logout">로그아웃</a></li> 
